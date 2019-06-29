@@ -1,0 +1,9 @@
+package learnJava;
+
+public class FirstJavaProgram {
+	public static String myClassVar="string for the variable";
+	
+	public static void main(String[] args) {
+		System.out.println(nyClassVar);
+	}
+}

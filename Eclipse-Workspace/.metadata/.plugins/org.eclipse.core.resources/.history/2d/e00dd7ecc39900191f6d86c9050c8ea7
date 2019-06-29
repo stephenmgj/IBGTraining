@@ -1,0 +1,22 @@
+package learnJava;
+
+import java.util.Scanner;
+public class FirstJavaProgram {
+	
+	public static void main(String[] args) {
+		
+		int int1 = 0;
+		int int2 = 0;
+		
+		Scanner in1 = new Scanner(System.in);
+		
+		System.out.println("Please enter a Number...");
+		int1 = in1.nextInt();
+		System.out.println("Please enter a Number...");
+		int2 = in1.nextInt();
+	
+		System.out.println("The sum of your numbers is " + int1+int2);
+		in1.close();
+	}
+	
+}

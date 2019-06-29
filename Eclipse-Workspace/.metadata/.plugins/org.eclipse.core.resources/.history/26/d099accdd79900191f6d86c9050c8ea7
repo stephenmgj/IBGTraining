@@ -1,0 +1,94 @@
+package learnJava;
+
+import java.util.Scanner;
+public class Operators {
+	
+	public static void main(String[] args) {
+	
+		//Arithmetic ops +, -, *, /, % is modulo, remainder after dividing
+		int int1 = 0;
+		int int2 = 0;
+		int sum1 = 0;
+		
+		Scanner in1 = new Scanner(System.in);
+	/*	//looks for user input which is called for by **
+		//Note must be imported before the public class dec^^^
+		
+		System.out.println("Please enter a Number...");
+		int1 = in1.nextInt(); */ /* **this calls the scanner in1 to read the next
+		int input and store it in int1*//*
+		System.out.println("Please enter a Number...");
+		int2 = in1.nextInt();
+		sum1 = int1 + int2;
+		
+		System.out.println("The sum of your numbers is " + sum1);
+		System.out.println();
+		
+		//Assignments ops +=, -= etc, add the two then set the value of the first to the resulting sum
+		//EG int1 = 2, int2 = 5, int1 += int2 means add 2+5=7, set int1 to 7
+		
+		System.out.println("Please enter a Number...");
+		int1 = in1.nextInt(); //**this calls the scanner in1 to read the next
+		//int input and store it in int1
+		System.out.println("Please enter a Number...");
+		int2 = in1.nextInt();
+		int1 += int2;
+		
+		System.out.println("The sum of your numbers is now in int1. Int1 is " + int1);
+		System.out.println();
+		
+		//Increment and decrement ++ --, add or subtract one from the number
+		
+		//Logical ops
+		
+		boolean bool1 = false;
+		boolean bool2 = true;
+		
+		System.out.println("Please enter true or false...");
+		bool1 = in1.nextBoolean(); //**this calls the scanner in1 to read the next
+		//boolean input and store it in bool1
+		System.out.println("Please enter true or false...");
+		bool2 = in1.nextBoolean();
+		 
+		boolean tAndT = bool1&&bool2;
+		// a&&b is true when a and b are true = AND
+		boolean fAndF = bool1||bool2;
+		//a||b is false when a and b are false = OR
+		boolean not1 = !bool1;
+		//returns the opposite = NOT
+		System.out.println(bool1 + " AND " + bool2 + " is " + tAndT);
+		System.out.println(bool1 + " OR " + bool2 + " is " + fAndF);
+		System.out.println("NOT " + bool1 + " is " + not1);
+*/		
+		//Comparison ops - return boolean true or false ==, !=, <, >, >=, <=
+		
+		//Bitwise ops & AND, | OR, ^ XOR, ~ NOT swap all the bits << shift one place left,
+		// discard leftmost bit and fill right with a zero, >> shift one right
+		// complement of a positive will return a negative: this is indicated by the biggest bit
+		//so 
+		short int3 = 3; //011
+		short int4 = 4; //100
+		int result = 0;
+		
+		result = int3 & int4;
+		System.out.println(int3+" & "+int4+" is "+result);
+
+		result = int3 | int4;
+		System.out.println(int3+" | "+int4+" is "+result);
+		
+		result = int3 ^ int4;
+		System.out.println(int3+" ^ "+int4+" is "+result);
+		
+		result = ~int3;
+		System.out.println(" ~"+int3+" is "+result);
+		
+		result = int3 << int4;
+		System.out.println(int3+" << "+int4+" is "+result);
+		
+		result = int3 >> int4;
+		System.out.println(int3+" >> "+int4+" is "+result);
+		
+		in1.close(); //close scanner to prevent memory leak
+	}
+	
+}

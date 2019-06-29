@@ -1,0 +1,13 @@
+package learnJava;
+
+public class classStaticVar {
+	public static String myClassVar="string for the variable";
+	// this is a static or class variable. It can be called anywhere
+	public static void main(String[] args) {
+	
+		classStaticVar obj = new classStaticVar();
+		//This label must match the public class statement
+		
+		System.out.println(obj.myClassVar);
+	}
+}

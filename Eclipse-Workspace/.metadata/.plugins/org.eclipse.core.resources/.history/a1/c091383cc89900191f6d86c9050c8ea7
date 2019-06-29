@@ -1,0 +1,46 @@
+package learnJava;
+
+import java.util.Scanner;
+public class Operators {
+	
+	public static void main(String[] args) {
+		
+		int int1 = 0;
+		int int2 = 0;
+		int sum1 = 0;
+		
+		Scanner in1 = new Scanner(System.in);
+		//looks for user input which is called for by **
+		
+		System.out.println("Please enter a Number...");
+		int1 = in1.nextInt(); //**this calls the scanner in1 to read the next
+		//int input and store it in int1
+		System.out.println("Please enter a Number...");
+		int2 = in1.nextInt();
+		sum1 = int1 + int2;
+		
+		System.out.println("The sum of your numbers is " + sum1);
+		System.out.println();
+		
+		boolean bool1 = false;
+		boolean bool2 = true;
+		
+		System.out.println("Please enter true or false...");
+		bool1 = in1.nextBoolean(); //**this calls the scanner in1 to read the next
+		//boolean input and store it in bool1
+		System.out.println("Please enter true or false...");
+		bool2 = in1.nextBoolean();
+		 
+		boolean tAndT = bool1&&bool2;
+		// a&&b is true when a and b are true = AND
+		boolean fAndF = bool1||bool2;
+		//a||b is false when a and b are false = OR
+		boolean not1 = !bool1;
+		//returns the opposite = NOT
+		System.out.println(bool1 + " AND " + bool2 + " is " + tAndT);
+		System.out.println(bool1 + " OR " + bool2 + " is " + fAndF);
+		System.out.println("NOT " + bool1 + " is " + not1);
+		in1.close();
+	}
+	
+}

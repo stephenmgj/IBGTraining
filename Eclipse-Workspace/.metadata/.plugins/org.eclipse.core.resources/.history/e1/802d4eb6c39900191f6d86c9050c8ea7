@@ -1,0 +1,13 @@
+package learnJava;
+
+public class FirstJavaProgram {
+	public static String myClassVar="string for the variable";
+	// this is a static or class variable. It can be called anywhere
+	public static void main(String[] args) {
+	
+		FirstJavaProgram obj = new FirstJavaProgram();
+		//This label must match the public class statement
+		
+		System.out.println(obj.myClassVar);
+	}
+}

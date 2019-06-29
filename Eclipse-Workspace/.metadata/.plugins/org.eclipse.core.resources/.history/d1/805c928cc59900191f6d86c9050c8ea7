@@ -1,0 +1,24 @@
+package learnJava;
+
+import java.util.Scanner;
+public class FirstJavaProgram {
+	
+	public static void main(String[] args) {
+		
+		int int1 = 0;
+		int int2 = 0;
+		int sum1 = 0;
+		
+		Scanner in1 = new Scanner(System.in);
+		
+		System.out.println("Please enter a Number...");
+		int1 = in1.nextInt();
+		System.out.println("Please enter a Number...");
+		int2 = in1.nextInt();
+		sum1 = int1 + int2;
+		
+		System.out.println("The sum of your numbers is " + sum1);
+		in1.close();
+	}
+	
+}

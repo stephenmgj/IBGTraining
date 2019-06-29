@@ -1,0 +1,38 @@
+package learnJava;
+
+import java.util.Scanner;
+public class FirstJavaProgram {
+	
+	public static void main(String[] args) {
+		
+		int int1 = 0;
+		int int2 = 0;
+		int sum1 = 0;
+		
+		Scanner in1 = new Scanner(System.in);
+		//looks for user input which is called for by **
+		
+		System.out.println("Please enter a Number...");
+		int1 = in1.nextInt(); //**this calls the scanner in1 to read the next
+		//int variable and store it in int1
+		System.out.println("Please enter a Number...");
+		int2 = in1.nextInt();
+		sum1 = int1 + int2;
+		
+		boolean bool1 = false;
+		boolean bool2 = true;
+		
+		System.out.println("Please enter true or false...");
+		bool1 = in1.nextBoolean(); //**this calls the scanner in1 to read the next
+		//int variable and store it in int1
+		System.out.println("Please enter true or false...");
+		bool2 = in1.nextBoolean();
+		 
+		boolean tAndT = bool1&&bool2;
+		boolean fAndF = bool1||bool2;
+		boolean not1 = !bool1;
+		System.out.println(bool1 + " AND " + bool2 + " is " + tAndT);
+		in1.close();
+	}
+	
+}
